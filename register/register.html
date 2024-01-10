@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background-modal">
+    <div class="card">
+        <div class="front">
+    <div class="container-modal">
+        <div id="header-modal">sign up</div>
+        <div class="row">
+            <form action="" method="post">
+                <div class="col-xs-6  col-md-6 form-group ">
+                    <i class="fa fa-user"></i>
+                    <input type="text" class="form-control" name="lname" placeholder="username" id="lname"
+                           oninput="vlidlname(this)" oninvalid="vlidlname(this)" required>
+                </div>
+                <div class="col-xs-6 col-md-6 form-group">
+                    <i class="fa fa-user"></i>
+                    <input type="text" class="form-control" name="topicName" placeholder="name" id="fname"
+                           oninput="vlidfname(this)" oninvalid="vlidfname(this)" required>
+                </div>
+                <div class="col-xs-12 col-md-12 form-group">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" class="form-control" id="email" name="email"
+                           placeholder="E-mail" oninput="vlidEmail(this)" oninvalid="vlidEmail(this)" required>
+                </div>
+                <div class="col-xs-12 col-md-12 form-group">
+                    <i class="fa fa-key"></i>
+                    <input type="password" class="form-control" id="password" name="password"
+                           placeholder="password" pattern="[0-9]{3,15}" oninput="vlidpassword(this)"
+                           oninvalid="vlidpassword(this)" required>
+                </div>
+                <div class="col-xs-12 col-md-12 form-group">
+                    <i class="fa fa-key"></i>
+                    <input type="password" class="form-control" id="repassword" name="repassword"
+                           placeholder="password" required>
+                </div>
+                <div class="col-xs-6 col-md-6 form-group">
+                    <input type="month" class="change-control form-control" placeholder="month" name="month">
+                </div>
+                <div class="col-xs-6 col-md-6 form-group">
+                    <input type="number" class="change-control form-control" name="number" placeholder="birth day ">
+                </div>
+                <div class="col-xs-6 col-md-6 form-group">
+                    <input type="url" class="change-control form-control" name="url" placeholder=" address" required id="url"
+                           oninput="validurl(this)" oninvalid="validurl(this)">
+                </div>
+                <div class="col-xs-6 col-md-6 form-group">
+                    <input type="tel" class="change-control form-control" name="tel" placeholder=" phone number " id="mobile"
+                           pattern="[0-9]{4}[0-9]{3}[0-9]{4}" oninput="validtel(this)" oninvalid="validtel(this)" required>
+                </div>
+                <div class="col-xs-12 col-md-12 form-group">
+                <button class="send-btn-modal btn">sign Up<i class="fa fa-send"></i></button>
+                <button id="signin" class="login btn">log In<i class="fa fa-sign-in"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+        </div>
+
+    <div class="back">
+        <div class="container-modal2">
+            <div id="header-modal2">sign in</div>
+            <div class="row">
+                <form action="">
+                    <div class="col-xs-12 col-md-12 form-group">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" class="form-control" id="email" name="email"
+                               placeholder="E-mail" oninput="vlidEmail(this)" oninvalid="vlidEmail(this)" required>
+                    </div>
+                    <div class="col-xs-12 col-md-12 form-group">
+                        <i class="fa fa-key"></i>
+                        <input type="password" class="form-control" id="password" name="password"
+                               placeholder="password" pattern="[0-9]{3,15}" oninput="vlidpassword(this)"
+                               oninvalid="vlidpassword(this)" required>
+                    </div>
+                    <button class="send-btn-modal btn">sign Up<i class="fa fa-send"></i></button>
+                    <button id="login" class="login btn">sign Up<i class="fa fa-sign-in"></i></button>
+                </form>
+            </div>
+        </div>
+            
+        </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/validate.js"></script>
+</body>
+</html>

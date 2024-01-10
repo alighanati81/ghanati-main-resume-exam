@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-header w-100">
+        <div class="row">
+        <div class="l-header col-lg-1 col-md-5 col-sm-6"><h4>Welcome</h4></div>
+        <div class="bar-header col-md-6 col-sm-6"><h6>Menu</h6><i class="fa fa-bars" onclick="openBar()"></i></div>
+        <div class="mid-header col-lg-8 col-md-9">
+            <ul>
+                <li class="li-header d-inline-block"><a data-scroll href="#home" class="night-a">Home</a></li>
+                <li class="li-header d-inline-block"><a data-scroll href="#anchor-srvices" class="night-a">Services</a></li>
+                <li class="li-header d-inline-block"><a data-scroll href="#cases-anchor" class="night-a">Cases</a></li>
+                <li class="li-header d-inline-block"><a href="#career-anchor" class="night-a">Career</a></li>
+                <li class="li-header d-inline-block"><a href="#about-anchor" class="night-a">About</a></li>
+                <li class="li-header d-inline-block contact-btn">Contact</li>
+            </ul>
+        </div>
+        <div class="r-header col-lg-3 col-md-3 col-sm-6">
+            <span id="time1"></span>
+            <span>Night Mode</span>
+            <label id="night-mode" onclick="dark()"></label>
+        </div>
+        
+
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="bar-content col-12 col-md-5 col-sm-5 ">
+        <span class="close-bar" onclick="closeBar()">&times;</span>
+        <div class="content-header w-100">
+            <span id="time-bar"></span>
+            <label id="night-bar" onclick="dark1()"><i class="fa fa-sun-o"></i><i class="fa fa-star-o"></i></label>
+        </div>
+        <div class="container content-body">
+            <ul>
+                <li class="li-content d-block text-center w-100"><a data-scroll href="#home" class="night-a">Home</a></li>
+                <li class="li-content d-block text-center w-100"><a data-scroll href="#anchor-srvices" class="night-a">Services</a></li>
+                <li class="li-content d-block text-center w-100"><a data-scroll href="#cases-anchor" class="night-a">Cases</a></li>
+                <li class="li-content d-block text-center w-100"><a href="#career-anchor">Career</a></li>
+                <li class="li-content d-block text-center w-100"><a href="#about-anchor" class="night-a">About</a></li>
+                <li class="li-content d-block text-center w-100 contact-btn-small">Contact</li>
+                <li class="li-content1 text-center w-100">payment<i class="fa fa-shopping-cart mx-1"></i></li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="first-content" id="home">
+        <div class="row">
+        <div class="logo col-lg-2 col-md-12 col-sm-12 text-center">
+            <img src="img/company/5.png" alt="" class="img-fluid">
+            <p>NOKIA</p>
+        </div>
+
+        <div class="slider-content col-lg-9 col-md-12 col-sm-12">
+            <div class="slide">
+                <img src="img/food/ice-latte-with-coffee-beans.jpg" alt="">
+                <!-- <video src="img/video/1.mp4" class="media1 video-fluid" autoplay muted></video> -->
+                <div class="content">
+                    <h3>Catterpillar</h3>
+                    <p>Benny Box is a Danish motion design, illustration and animation studio making ideas, brands and stories come to life.
+                         They are humble and award-winning, passionate and creative.</p>
+                         <a href="#" class="btn-slider d-inline-block">Read more<i class="fa fa-book"></i></a>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="img/food/hot-coffee-coffee-beans-marble-table.jpg" alt="" class="img-fluid">
+                <div class="content">
+                    <h3>Catterpillar</h3>
+                    <p>Benny Box is a Danish motion design, illustration and animation studio making ideas, brands and stories come to life.
+                         They are humble and award-winning, passionate and creative.</p>
+                         <a href="#" class="btn-slider d-inline-block">Read more<i class="fa fa-book"></i></a>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="img/food/front-view-glass-milk-coffee-with-chocolate.jpg" alt="" class="img-fluid">
+                <div class="content">
+                    <h3>Catterpillar</h3>
+                    <p>Benny Box is a Danish motion design, illustration and animation studio making ideas, brands and stories come to life.
+                         They are humble and award-winning, passionate and creative.</p>
+                         <a href="#" class="btn-slider d-inline-block">Read more<i class="fa fa-book"></i></a>
+                </div>
+            </div>
+    
+            <div class="next" onclick="nextPic()">&lt;</div>
+            <div class="previous" onclick="previous()">&gt;</div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<div class="services-header w-100">
+    <div class="row">
+    <div class="free-space col-lg-2 d-inline-block"></div>
+    <div class="head col-lg-5 col-md-12 col-sm-12 d-inline-block" id="anchor-srvices">
+    <h2><a href="#" class="night-a">Services</a><i class="fa fa-line-chart"></i></h2>
+    </div>
+    <div class="para col-lg-4 col-md-12 col-sm-12 d-inline-block">
+        <p>
+            You bring the challenge and your domain knowledge.
+             We bring design, technology, and 23 years of experience.
+             We have a strong position and a solid experience within eight different areas.
+            </p>
+    </div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+<div class="services-content w-100">
+    <div class="row">
+      <div class="free-space col-lg-2 d-inline-block"></div>
+     <a href="#" class="left-item col-lg-4  col-md-11 col-sm-11  night-b">
+            <img src="img/food/chocolate-chips-cookies-arrangement.jpg" alt="" class="img-content">
+             <h4>Games & interacivity</h4>
+
+        <p>Show it. Don't tell it. Examples of "alive and kicking" Dwarf solutions. From the tech geeky to the visually pleasing.</p>
+        <div class="tag-space">
+        <i class="fa fa-tag"></i>
+    </div>
+     </a>
+     <a href="#" class="right-item col-lg-4 col-md-11 col-sm-11  night-b">
+        <img src="img/food/close-up-fresh-homemade-muffin.jpg" alt="" class="img-content">
+             <h4>Games & interacivity</h4>
+
+        <p>Show it. Don't tell it. Examples of "alive and kicking" Dwarf solutions. From the tech geeky to the visually pleasing.</p>
+        <div class="tag-space">
+        <i class="fa fa-tag"></i>
+    </div>
+     </a>
+     <div class="free-space col-lg-2 d-inline-block"></div>
+     <a href="#" class="left-item col-lg-4  col-md-11 col-sm-11  night-b">
+            <img src="img/food/donut-with-topping-sprinkle-pink-background.jpg" alt="" class="img-content">
+             <h4>Games & interacivity</h4>
+
+        <p>Show it. Don't tell it. Examples of "alive and kicking" Dwarf solutions. From the tech geeky to the visually pleasing.</p>
+        <div class="tag-space">
+        <i class="fa fa-tag"></i>
+    </div>
+     </a>
+     <a href="#" class="right-item col-lg-4 col-md-11 col-sm-11  night-b">
+        <img src="img/food/chocolate-chips-cookies-arrangement.jpg" alt="" class="img-content">
+             <h4>Games & interacivity</h4>
+
+        <p>Show it. Don't tell it. Examples of "alive and kicking" Dwarf solutions. From the tech geeky to the visually pleasing.</p>
+        <div class="tag-space">
+        <i class="fa fa-tag"></i>
+    </div>
+     </a>
+     <div class="free-space col-lg-2 d-inline-block"></div>
+     <a href="#" class="left-item col-lg-4  col-md-11 col-sm-11  night-b">
+            <img src="img/food/close-up-fresh-homemade-muffin.jpg" alt="" class="img-content">
+             <h4>Games & interacivity</h4>
+
+        <p>Show it. Don't tell it. Examples of "alive and kicking" Dwarf solutions. From the tech geeky to the visually pleasing.</p>
+        <div class="tag-space">
+        <i class="fa fa-tag"></i>
+    </div>
+     </a>
+     <a href="#" class="right-item col-lg-4 col-md-11 col-sm-11  night-b">
+        <img src="img/food/donut-with-topping-sprinkle-pink-background.jpg" alt="" class="img-content">
+             <h4>Games & interacivity</h4>
+
+        <p>Show it. Don't tell it. Examples of "alive and kicking" Dwarf solutions. From the tech geeky to the visually pleasing.</p>
+        <div class="tag-space">
+        <i class="fa fa-tag"></i>
+    </div>
+     </a>
+</div>
+</div>
+
+<div class="claerfix"></div>
+<div class="background"></div>
+<div class="container-contact-us"> 
+    <div class="slider-contact d-inline-block m-1">
+        <div class="owl-carousel">
+            <div class="slide1 ">  
+                <img src="img/blog/1.png" alt=""> 
+            </div>
+    
+            <div class="slide1">  
+                <img src="img/blog/2.jpg" alt=""> 
+            </div>
+    
+            <div class="slide1">  
+                <img src="img/blog/3.png" alt=""> 
+            </div>
+          </div>
+          <div class="content-owel w-50 p-3">
+            <h6>Bernhard Bangs Allé 25</h6>
+            <p>2000 Frederiksberg
+                CVR: 25121198
+                Cookie policy
+                Privacy policy</p>
+          </div> 
+          <div class="social-media m-3">
+            <div class="ul-contact text-end">
+                <li class="li-contact d-inline-block m-2"><a href="#" class="night-b"><i class="fa fa-telegram"></i></a></li>
+                <li class="li-contact d-inline-block m-2"><a href="#" class="night-b"><i class="fa fa-instagram"></i></a></li>
+                <li class="li-contact d-inline-block m-2"><a href="#" class="night-b"><i class="fa fa-facebook"></i></a></li>
+                <li class="li-contact d-inline-block m-2"><a href="#" class="night-b"><i class="fa fa-twitter"></i></a></li>
+            </div>
+          </div>
+          <div class="contact-us text-center">
+          <div class="contact-us1 co-lg-5 d-inline-block text-center py-2 px-4 m-2"><a href="#"><i class="fa fa-phone">09315786115</i></a></div>
+          <div class="contact-us2 col-lg-5 d-inline-block text-center py-2 px-4 m-2"><a href="#" class="night-b">ciw16235@gmail.com</a></div>
+        </div>
+    </div>
+    <div class="contact-us-main d-inline-block p-3">
+        <div class="btn-close2 btn-close"></div> 
+        <div class="to-ali">to: <span class="to-ali1 d-inline-block">Dwarf</span></div>
+        <form action="">
+            <input type="text" placeholder="Name:" class="d-block input-name night-b">
+            <input type="email" placeholder="E-mail:" class="d-block input-email night-b">
+            <textarea class="massage night-b" placeholder="Your massage "></textarea>
+            <button class="btn1 btn w-100"><i class="fa fa-send-o"></i></button>
+        </form>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="container-contact-us2 col-11 m-2 text-center">
+    <div class="slider-contact2  m-2">
+        <button class="btn-close btn-close3"></button>
+          <div class="content-owel w-50 p-2">
+            <h6>Bernhard Bangs Allé 25</h6>
+            <p>2000 Frederiksberg
+                CVR: 25121198
+                Cookie policy
+                Privacy policy</p>
+          </div> 
+          <div class="social-media m-3">
+            <div class="ul-contact text-end">
+                <li class="li-contact d-inline-block m-2"><a href="#" class="night-b"><i class="fa fa-telegram"></i></a></li>
+                <li class="li-contact d-inline-block m-2"><a href="#" class="night-b"><i class="fa fa-instagram"></i></a></li>
+                <li class="li-contact d-inline-block m-2"><a href="#" class="night-b"><i class="fa fa-facebook"></i></a></li>
+                <li class="li-contact d-inline-block m-2"><a href="#" class="night-b"><i class="fa fa-twitter"></i></a></li>
+            </div>
+          </div>
+          <form action="">
+            <input type="email" placeholder="send us E-mail:" class="d-block input-email night-b">
+            <textarea class="massage2 night-b" placeholder="Your massage "></textarea>
+            <button class="btn1 btn mx-auto"><i class="fa fa-send-o"></i></button>
+        </form>
+        <div class="contact-us text-center">
+            <div class="contact-us1 co-lg-5 col-md-11 col-sm-11 d-inline-block text-center py-2 px-4 m-2"><a href="#"><i class="fa fa-phone">09315786115</i></a></div>
+            <div class="contact-us2 col-lg-5 col-md-11 col-sm-11 d-inline-block text-center py-2 px-4 m-2"><a href="#" class="night-b">ciw16235@gmail.com</a></div>
+          </div>
+</div>
+</div>
+
+
+
+
+
+<div class="clearfix"></div>
+<div class="cases-header w-100" id="cases-anchor">
+    <div class="row">
+    <div class="free-space col-lg-2 d-inline-block"></div>
+    <div class="head col-lg-5 col-md-12 col-sm-12 d-inline-block" id="anchor-srvices">
+    <h2><a href="#" class="night-a">Cases</a><i class="fa fa-briefcase"></i></h2>
+    </div>
+    <div class="para col-lg-4 col-md-12 col-sm-12 d-inline-block">
+        <p>
+            
+          Show it. Don't tell it. Examples of "alive and kicking" Dwarf solutions. From the tech geeky to the visually pleasing.
+            </p>
+    </div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="case-content my-3 w-100">
+    <div class="row">
+    <div class="free-space col-lg-2 d-inline-block"></div>
+
+    <div class="case-main col-lg-9">
+
+        <div class="case-slider-items col-lg-12 col-md-12 col-sm-12  ">
+            <div class="cookie text-center d-inline-block">
+                <img src="img/food/8401470.jpg" alt="" class="img-fluid">
+                <h6>cookie</h6>
+            </div>
+            <div class="cup-cake text-center d-inline-block">
+                <img src="img/food/close-up-fresh-homemade-muffin.jpg" alt="" class="img-fluid">
+                <h6 >cup cake</h6>
+            </div>
+            <div class="donut text-center d-inline-block">
+                <img src="img/food/2452.jpg" alt="" class="img-fluid">
+                <h6>donut</h6>
+            </div>
+            
+        </div>
+
+         <div class="case-slider col-lg-12 col-md-12 col-sm-12 mx-1" id="case-slider1" >
+            <div class="slider-item1 w-100">
+                <div class="case-slide1 text-center" id="case-slide1">
+                    <img src="img/food/chocolate-chip-cookies-23196-1.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="case-slide1 text-center" id="case-slide1">
+                    <img src="img/food/cookie-recipes.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="case-slide1 text-center" id="case-slide1">
+                    <img src="img/food/ice-latte-with-coffee-beans.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="next1" onclick="caseNextPic()"><i class="night-a fa fa-angle-double-left"></i></div>
+        <div class="previous1" onclick="casePrevious()"><i class="night-a fa fa-angle-double-right"></i></div>
+            </div>
+            <div class="case-content-slider">
+                <h4>cookie</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officia facilis voluptatem eum laboriosam eveniet, nemo numquam labore totam! Doloribus nemo inventore dignissimos deserunt culpa omnis alias quod illo voluptate.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="case-slider col-lg-12 col-md-12 col-sm-12 mx-1 " id="case-slider2">
+            <div class="slider-item1 w-100">
+                <div class="case-slide1 text-center" id="case-slide2">
+                    <img src="img/food/view-delicious-sweet-cupcake-dessert-with-frosting.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="case-slide1 text-center" id="case-slide2">
+                    <img src="img/food/chocolate-cupcakes-SQUARE.webp" alt="" class="img-fluid">
+                </div>
+                <div class="case-slide1 text-center" id="case-slide2">
+                    <img src="img/food/Vanilla-Cupcakes-3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="next1" onclick="caseNextPic2()"><i class="fa fa-angle-double-left"></i></div>
+        <div class="previous1" onclick="casePrevious2()"><i class="fa fa-angle-double-right"></i></div>
+            </div>
+            <div class="case-content-slider">
+                <h4>cup cake</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officia facilis voluptatem eum laboriosam eveniet, nemo numquam labore totam! Doloribus nemo inventore dignissimos deserunt culpa omnis alias quod illo voluptate.</p>
+            </div>
+        </div> 
+
+        <div class="case-slider col-lg-12 col-md-12 col-sm-12 mx-1" id="case-slider3">
+            <div class="slider-item1 w-100">
+                <div class="case-slide1 text-center" id="case-slide3">
+                    <img src="img/food/resize/delicious-glazed-doughnut.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="case-slide1 text-center" id="case-slide3">
+                    <img src="img/food/resize/multiple donut.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="case-slide1 text-center" id="case-slide3">
+                    <img src="img/food/closeup-shot-tasty-sprinkled-donuts-wooden-surface-spoon-side.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="next1" onclick="caseNextPic3()"><i class="fa fa-angle-double-left"></i></div>
+        <div class="previous1" onclick="casePrevious3()"><i class="fa fa-angle-double-right"></i></div>
+            </div>
+            <div class="case-content-slider">
+                <h4>donut</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officia facilis voluptatem eum laboriosam eveniet, nemo numquam labore totam! Doloribus nemo inventore dignissimos deserunt culpa omnis alias quod illo voluptate.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div class="cases-header w-100" id="cases-anchor">
+    <div class="row">
+    <div class="free-space col-lg-2 d-inline-block"></div>
+    <div class="head col-lg-5 col-md-12 col-sm-12 d-inline-block" id="anchor-srvices">
+    <h2><a href="#" class="night-a">career</a><i class="fa fa-graduation-cap "></i></h2>
+    </div>
+    <div class="para col-lg-4 col-md-12 col-sm-12 d-inline-block">
+        <p>
+            
+          Show it. Don't tell it. Examples of "alive and kicking" Dwarf solutions. From the tech geeky to the visually pleasing.
+            </p>
+    </div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+<div class="career-content my-3 w-100">
+    <div class="row">
+    <div class="free-space col-lg-2 d-inline-block"></div>
+    <div class="career-main col-lg-9 col-md-12 col-sm-12 text-center" id="career-anchor">
+        <div class="career-items col-lg-3 col-md-6 col-sm-12 d-inline-block ">
+                <div class="border-s0 career-img text-center mx-auto" >
+                    <img src="img/food/Vanilla-Cupcakes-3.jpg" alt="" class="first-pic1 p-2" onmouseover="changePic()" onmouseout="refresh()">
+                </div>
+                <span class="type d-block text-center mt-4 my-3">chocolate</span>
+                <div class="career-price-container w-100 py-1">
+                <span class="price d-inline-block px-2">price:</span>
+                <span class="price1 d-inline-block px-2">54000$</span>
+            </div>
+        </div>
+
+        <div class="career-items col-lg-3 col-md-6 col-sm-12 d-inline-block ">
+            <div class="border-s1 career-img text-center mx-auto" >
+                <img src="img/food/Vanilla-Cupcakes-3.jpg" alt="" class="first-pic2 p-2" onmouseover="changePic1()" onmouseout="refresh1()">
+            </div>
+            <span class="type d-block text-center mt-4 my-3">chocolate</span>
+            <div class="career-price-container w-100 py-1">
+            <span class="price d-inline-block px-2">price:</span>
+            <span class="price1 d-inline-block px-2">54000$</span>
+        </div>
+    </div>
+
+    <div class="career-items col-lg-3 col-md-6 col-sm-12 d-inline-block ">
+        <div class="border-s2 career-img text-center mx-auto" onmouseover="changePic2()" onmouseout="refresh2()">
+            <img src="img/food/Vanilla-Cupcakes-3.jpg" alt="" class="first-pic3 p-2" >
+        </div>
+        <span class="type d-block text-center mt-4 my-3">chocolate</span>
+        <div class="career-price-container w-100 py-1">
+        <span class="price d-inline-block px-2">price:</span>
+        <span class="price1 d-inline-block px-2">54000$</span>
+    </div>
+</div>
+
+<div class="career-items col-lg-3 col-md-6 col-sm-12 d-inline-block ">
+    <div class="border-s3 career-img text-center mx-auto" onmouseover="changePic3()" onmouseout="refresh3()">
+        <img src="img/food/Vanilla-Cupcakes-3.jpg" alt="" class="first-pic4 p-2" >
+    </div>
+    <span class="type d-block text-center mt-4 my-3">chocolate</span>
+    <div class="career-price-container w-100 py-1">
+    <span class="price d-inline-block px-2">price:</span>
+    <span class="price1 d-inline-block px-2">54000$</span>
+</div>
+</div>
+
+<div class="career-items col-lg-3 col-md-6 col-sm-12 d-inline-block ">
+    <div class="border-s4 career-img text-center mx-auto" onmouseover="changePic4()" onmouseout="refresh4()">
+        <img src="img/food/Vanilla-Cupcakes-3.jpg" alt="" class="first-pic5 p-2" >
+    </div>
+    <span class="type d-block text-center mt-4 my-3">chocolate</span>
+    <div class="career-price-container w-100 py-1">
+    <span class="price d-inline-block px-2">price:</span>
+    <span class="price1 d-inline-block px-2">54000$</span>
+</div>
+</div>
+
+<div class="career-items col-lg-3 col-md-6 col-sm-12 d-inline-block ">
+    <div class="border-s5 career-img text-center mx-auto" onmouseover="changePic5()" onmouseout="refresh5()">
+        <img src="img/food/Vanilla-Cupcakes-3.jpg" alt="" class="first-pic6 p-2" >
+    </div>
+    <span class="type d-block text-center mt-4 my-3">chocolate</span>
+    <div class="career-price-container w-100 py-1">
+    <span class="price d-inline-block px-2">price:</span>
+    <span class="price1 d-inline-block px-2">54000$</span>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="open-sell text-center"><i class="fa fa-angle-double-right"></i>
+    <i class="cart1 d-inline-block text-center fa fa-shopping-cart"></i>
+</div>
+
+<div class="close-sell text-center "><i class="fa fa-angle-double-left"></i></div> 
+
+<div class="background"></div>
+<div class="sell-section">
+    <button class="btn-sell-close btn-close"></button> 
+    <div class="sell-content">   
+        <div class="sell-item">
+            <img src="img/food/donut-with-topping-sprinkle-pink-background.jpg" alt="" class="img-sell d-inline-block">
+            <h5 class="d-inline-block mx-2">Games & interacivity</h5>
+            <span class="d-inline-block mx-3">$38400</span>
+            <span><i class="fa fa-trash d-inline-block mx-1"></i></span>
+        </div>
+        <div class="sell-item">
+            <img src="img/food/Vanilla-Cupcakes-3.jpg" alt="" class="img-sell d-inline-block">
+            <h5 class="d-inline-block mx-2">Games & interacivity</h5>
+            <span class="d-inline-block mx-3">$38400</span>
+            <span><i class="fa fa-trash d-inline-block mx-1"></i></span>
+        </div>
+
+        <div class="sell-item">
+            <img src="img/food/resize/delicious-glazed-doughnut.jpg" alt="" class="img-sell d-inline-block">
+            <h5 class="d-inline-block mx-2">Games & interacivity</h5>
+            <span class="d-inline-block mx-3">$38400</span>
+            <span><i class="fa fa-trash d-inline-block mx-1"></i></span>
+        </div>
+
+        <div class="sell-price">
+            <span class="float-start">price:</span>
+            <span class="float-end me-4">$55400</span>
+        </div>
+    </div>
+        <div class="sell-pay text-center">
+            <button class="btn-pay btn w-75">payment<i class="fa fa-shopping-cart mx-1"></i></button>
+        </div>
+    
+</div>
+
+<div class="footer-section container-fluid" id="about-anchor">
+    <div class="container">
+         <div class="row">
+  <div class="col-12 col-sm-6 col-md-3">
+    <div class="widget">
+  <div class="widget-title"> About us</div>
+  <div class="widget-content">
+    <img src="" alt="photo">
+  
+  <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi, assumenda amet reprehenderit aliquam illo, neque asper.
+  </p>
+  
+  <ul>
+    <li><a href="#">
+      <i class="fa fa-facebook">
+    </i>
+    </a>
+  </li>
+    <li><a href="#">
+      <i class="fa fa-instagram">
+      </i>
+    </a>
+    </li>
+    <li><a href="#">
+       <i class="fa fa-phone">
+       </i>
+    </a>
+    </li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3">
+    <div class="widget">
+  <div class="widget-title"> About us</div>
+  <div class="widget-item">
+  
+  <ul>
+    <li><a href="#" class="night-a">
+        Home page 
+    </a>
+  </li>
+    <li><a href="#" class="night-a">
+        Home page 
+    </a>
+    </li>
+    <li><a href="#" class="night-a">
+        Home page 
+    </li>
+    <li><a href="#" class="night-a">
+        Home page
+    </a>
+    </li>
+    <li><a href="#" class="night-a">
+        Home page
+    </a>
+    </li>
+  </ul>
+  
+  </div>
+  </div>
+  
+  </div>
+  
+  <div class="col-12 col-sm-6 col-md-3 text-start">
+    <div class="widget">
+  <div class="widget-title"> About us</div>
+  <div class="widget-item">
+  
+  <ul>
+    <li><a href="#" class="night-a">
+       Home page
+    </a>
+  </li>
+    <li><a href="#" class="night-a">
+        Home page
+    </a>
+    </li>
+    <li><a href="#" class="night-a">
+        Home page
+    </li>
+    <li><a href="#" class="night-a">
+        Home page
+    </a>
+    </li>
+    <li><a href="#" class="night-a">
+        Home page
+    </a>
+    </li>
+  </ul>
+  
+  </div>
+  </div>
+  
+  </div>
+  
+  <div class="col-12 col-sm-6 col-md-3">
+    <div class="widget">
+  <div class="widget-title">About us </div>
+  <div class="widget-gallery">
+
+  <ul>
+    <li>
+        <a href="img/food/resize/cakes1 size.jpg" data-fancybox="gallery"   data-caption="1">
+      <img src="img/food/resize/cakes1 size.jpg" alt="photo">
+    </a>
+  </li>
+
+  <li>
+    <a href="img/food/resize/cakes1 size.jpg" data-fancybox="gallery"   data-caption=" 2">
+    <img src="img/food/resize/cakes1 size.jpg" alt="photo">
+  </a>
+</li>
+
+  <li>
+    <a href="img/food/resize/cakes1 size.jpg" data-fancybox="gallery"   data-caption=" 3">
+    <img src="img/food/resize/cakes1 size.jpg" alt="photo">
+  </a>
+  </li>
+
+  <li>
+    <a href="img/food/resize/cakes1 size.jpg" data-fancybox="gallery"   data-caption=" 4">
+    <img src="img/food/resize/cakes1 size.jpg" alt="photo">
+  </a>
+  </li>
+
+  <li>
+    <a href="img/food/resize/cakes1 size.jpg" data-fancybox="gallery"   data-caption=" 5">
+    <img src="img/food/resize/cakes1 size.jpg" alt="photo">
+  </a>
+  </li>
+
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+
+<div class="clearfix"></div>
+<div class="way-modal text-center ">Do you have account? <a href="register/register.html" class="way-a">sign In/Log In</a></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
